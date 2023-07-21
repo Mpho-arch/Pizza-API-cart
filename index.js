@@ -140,7 +140,7 @@ document.addEventListener('alpine:init', () => {
           })
           .then(() => {
             if (this.Amount >= this.cart.total) {
-              this.checkOutMessage = 'Enjoy your pizza';
+              this.checkOutMessage = 'Cart payment Successful and enjoy';
               this.change = this.Amount - this.cart.total;
               setTimeout(() => {
                 this.cart.total = 0;
