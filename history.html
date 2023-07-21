@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>historical carts</title>
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="history-cart" style="background-image: url('images/Pizza.4.jpg'); background-size: cover;">
+    <div x-data="historicalWidget">
+        <div class="container">
+            <br>
+            <div class="box">
+            <a href="index.html">home</a><br>
+       
+
+            <!-- user history -->
+
+            <div>
+                username: <span x-text="username"></span>
+            </div>
+        </div>
+            <div class="text-center" >
+                <h3>Historical Carts</h3>
+
+                    <!-- user history -->
+                    <template x-for="cart in userHistory">
+                        <div x-show="openHistory">
+                        <p x-text=" cart.id"></p>
+                        <p x-text="cart.cart_code"></p>
+                        <p x-text="cart.username"></p>
+                        <p x-text="cart.status"></p>
+                    </div>
+                </template>
+
+                <template x-for="cart in showUserHistory">
+                    <div>
+                       <p><span><b>Cart Id: </b></span> <span x-text="cart.id"></span></p>
+                        <p><span><b>Cart code:</b></span> <span x-text="cart.cart_code"></span></p>
+                        <p><span><b>Username: </b></span><span x-text="cart.username"></span></p>
+                        <p><span><b>Status: </b></span><span x-text="cart.status"></span></p>
+                       <br>
+                    </div>
+                </template>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <script src="history.js"></script>
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</body>
+
+</html>

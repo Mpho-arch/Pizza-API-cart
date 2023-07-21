@@ -1,0 +1,135 @@
+body{
+   background-image: url(images/Pizza\ 4.jpg);
+   background-size: cover;
+  
+    }
+
+    .history-cart {
+        color: rgb(61, 55, 55);
+        
+    }
+    
+    .btn-dark:hover{
+        border: 1px solid rgb(0, 0, 0);
+        color: black;
+        background-color: white;
+        font-weight: bold;
+    }
+    
+    .span{
+        color: rgb(14, 5, 5);
+        font-weight: bold;
+    }
+    @media (min-width:960px){
+       
+        
+    }
+    
+    h1{
+        text-align: center;
+    }
+    
+    .cart{
+        background-color:#696565;
+        margin: 0.5em;
+        padding: 0.5em;
+    }
+
+    .contact_us {
+        background-color:#f28482;
+        text-align: center;
+    
+    }
+    
+    .menu {
+        display: inline-block;
+        border: 5px solid;
+        padding: 1em;
+        background-color: bisque;
+        border-radius: 15px;
+        width: 15em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        margin-left: 4em;
+        margin-right: 1em;
+    }
+    .btn-style{
+        border-radius: 10px; 
+        background-color: bisque; 
+        color: rgb(12, 14, 14);
+        border:5px solid #b8574e;
+    }
+
+    .btn1lg {
+    border-radius: 100px;
+    background-color: rgb(233, 17, 17);
+      
+    }
+
+
+    .btn2lg{
+
+        text-align: end;
+    }
+
+
+    .container text-center{ 
+
+        text-align: center;
+    }
+
+    .heading{
+
+        text-align: left;
+    }
+
+    .text-center {
+        background-color: rgb(128, 120, 111);
+        padding: 1em;
+
+    }
+    .box{
+        background-color: rgb(230, 114, 114);
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        
+    }
+
+    h1{color: white;}
+    .small-pizza{
+        background-color:#e2d2b0;
+        margin: 0.5em;
+        padding: 0.4em;
+        border-radius: 2em;
+        flex: 1;
+    }
+    
+    .medium-pizza{
+        background-color: #e2d2b0;
+        margin: 0.5em;
+        padding: 0.4em;
+        border-radius: 2em;
+    
+    }
+    
+    .large-pizza{
+        background-color: #e2d2b0;
+        margin: 0.5em;
+        padding: 0.4em;
+        border-radius: 2em;
+    }
+    
+    @keyframes fade-inout {
+    0% {capacity: 1;}
+    100% {capacity: 0;}
+    }
+
+    .fade-in-fade-out {
+    /* apply animation */
+    animation: fade-inout 5s infinite alternate;
+    /* style the text */
+    font-size: 5em;
+    text-align: center;
+    }
+    

@@ -1,0 +1,65 @@
+#Pizza API
+
+## To use these HTTP endpoint install the REST Client plugin in VScode.
+
+# get all Pizzas from the API 
+
+GET https://pizza-api.projectcodex.net/api/pizzas 
+
+# create cart
+GET https://pizza-api.projectcodex.net/api/pizza-cart/create?username=Mpho-arch
+
+
+# Check cart
+GET https://pizza-api.projectcodex.net/api/pizzas/username/Mpho-arch
+
+
+# check user's cart
+GET https://pizza-api.projectcodex.net/api/pizza-cart/username/Mpho-arch
+
+
+# view featured pizzas
+GET https://pizza-api.projectcodex.net/api/pizzas/featured
+
+
+#post featured pizzas 
+Post https://pizza-api.projectcodex.net/api/pizzas/featured
+{
+	"username" : "Mpho",
+	"pizza_id" : 8
+}
+
+
+# add pizza to cart
+POST https://pizza-api.projectcodex.net/api/pizzas/api/pizza-cart/add
+
+{
+	"cart_code" : "qS5prSWJVQ",
+	"pizza_id" : 2
+
+}
+
+
+#  remove pizza from cart
+Post https://pizza-api.projectcodex.net/api/pizzas/api/pizza-cart/remove
+
+{
+	"cart_code" : "qS5prSWJVQ",
+	"pizza_id" : 2
+
+}
+
+
+# view cart content
+GET https://pizza-api.projectcodex.net/api/pizza-cart/:cart_code/get
+
+
+# make payments
+Post https://pizza-api.projectcodex.net/api/pizza-cart/pay
+{
+	"cart_code" : "qS5prSWJVQ",
+	"amount" : 400
+
+}
+
+
