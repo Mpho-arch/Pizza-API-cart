@@ -93,7 +93,7 @@
             <tr x-show="makePayment">
               <td colspan="6">
                 <div>
-                  <template x-if="checkOutMessage=='Enjoy your pizza' " >
+                  <template x-if="checkOutMessage=='Cart payment Successful and enjoy' " >
                     <div  class="text-bg-secondary p-3">
                       <p x-text="checkOutMessage" style="font-size:20px"></p>
                       <span>Your Change is: R</span><span x-text="change.toFixed(2)"></span>
@@ -101,7 +101,7 @@
 
                   </template>
 
-                  <template x-if="checkOutMessage== 'Sorry, That is not enough money!'">
+                  <template x-if="checkOutMessage== 'Apologies, insufficient funds!'">
                     <p class="alert alert-danger" x-text="checkOutMessage"></p>
                   </template>
                   <div>
@@ -117,24 +117,6 @@
           </tbody>
         </table>
       </div>
-      </div>
-      <div>
-
-        <div>
-          <p x-text="checkoutMessage"></p>
-          <p x-text="displayError"></p>
-        </div>
-
-      
-        <div x-show="show" >
-          <label>Enter Amount</label>
-
-          <input type="number" x-model="totalpaymentAmount">
-
-          <button class="btn-style"
-            @click="if(totalpaymentAmount >= Total){checkoutMessage ='Enjoy your pizzas';Total=0, counter=0, pepperoniPizza=0, chickenPizza=0, mushroomPizza=0, totalpaymentAmount=0} else{checkoutMessage='Sorry-that is not enough money!',setTimeout(function(){checkoutMessage=''},3000)}">Pay</button>
-        </div>
-
       </div>
 
     </div>
